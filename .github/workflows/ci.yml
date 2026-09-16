@@ -18,7 +18,7 @@ jobs:
       - name: Install Server Dependencies
         run: |
           cd server
-          npm ci
+          npm install
 
   build-client:
     runs-on: ubuntu-latest
@@ -31,5 +31,5 @@ jobs:
       - name: Install & Build Client
         run: |
           cd client
-          npm ci
+          npm install
           npm run build
