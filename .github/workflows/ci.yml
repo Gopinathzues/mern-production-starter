@@ -1,4 +1,3 @@
-Set-Content -Path .github/workflows/ci.yml -Value @"
 name: CI Build Check
 
 on:
@@ -34,4 +33,3 @@ jobs:
           cd client
           npm install
           npm run build
-"@
